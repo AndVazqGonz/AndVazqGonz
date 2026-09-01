@@ -1,7 +1,14 @@
+:root{
+ --color-bg: #303a63;
+ --color-text: #F2D7B6;
+--color-accent: #784E3A;
+ --font-title: 'cattivo', sans-serif;
+ --font-body: 'lipa-agate-high', sans-serif;
+}
+
 body{
-    background: #674131;
-    color: #303a63;
-    color:rgb(255, 234, 206);
-    color: rgb(82, 35, 46); 
-    font-family: 'Courier New', Courier, monospace;
+background-color: var(--color-bg);
+color: var(--color-text);
+font-family: var(--font-body);
+
 }
