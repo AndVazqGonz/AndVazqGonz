@@ -1,7 +1,10 @@
 :root {
-    --color-bg: #F2D7B6;
-    --color-text: #303a63;
-    --color-accent: #784E3A;
+    --dark-blue:#2e2e5c;
+    --beige: #F2D7B6;
+    --color-bg: var(--beige);
+    --color-text: var(--dark-blue);
+    --color-accent: #D98166;
+    --color-accent2: #5A6275; 
     --font-title: 'cattivo', sans-serif;
     --font-body: 'lipa-agate-high', sans-serif;
 }
@@ -9,22 +12,45 @@
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
+    accent-color: var(--color-accent2);
     font-family: var(--font-body);
     font-size: 1.5rem;
     text-align: center;
+    transition: all .5s ease-in-out;
 
 }
+
+.dark-theme {
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    accent-color: var(--color-accent);
+
+    /*--color-bg: var(--dark-blue);
+    --color-text: var(--beige);
+    color-accent: var(--color-accent);
+    */
+}
+
+/*@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: var(--dark-blue);
+    --color-text: var(--beige);
+   --color-accent: var(--color-accent);
+    }
+}
+    root define los valores de lo visual. Sin embargo se trabaja con variables directamente y no propiedades que definen esto.
+    varialbes tiene doble guion y se definen en root. Se pueden usar en cualquier parte del documento.
+*/
 
 h1,
 h2,
 h3 {
     font-family: var(--font-title);
+    text-align: center;
 }
 
 header {
-    background-color: var(--color-accent);
-    color: var(--color-bg);
-   
+    background-color: var(--color-accent2);
     font-size: 36px;
     text-align: left;
 }
