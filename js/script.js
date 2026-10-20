@@ -1,8 +1,9 @@
 console.log("Hello, world!");
-function saludo(){
-    alert("Hola, mundo!");
+function saludo(nombre){
+    alert("Hola, " + nombre);
 }
-saludar();
+saludo("Andy"); //llama a la función saludo, que es la que contiene el alert, que es un mensaje emergente en la pantalla.
+
 let toggleThemeButton = document.getElementById("toggle-theme-btn"); 
 //para declarar variables se usa el camel case (camelCaseMethod)
 //instancias separan las clases de los objetos, es decir, las clases son como moldes y las instancias son los objetos que se crean a partir de esos moldes.
