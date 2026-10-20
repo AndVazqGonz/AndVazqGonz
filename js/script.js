@@ -7,9 +7,13 @@ function saludo(nombre="Mundo"){
 
 //para declarar variables se usa el camel case (camelCaseMethod)
 
-const toggleThemeButton = document.getElementById("toggle-theme-btn"); //document es el elemento que contiene todo el contenido de la página web, y getElementById es un método que permite acceder a un elemento del html a través de su id, en este caso, el id es "toggle-theme-btn", que es el botón que permite cambiar el tema de la página web.
+const TOGGLE_BTN = document.getElementById("toggle-theme-btn"); //document es el elemento que contiene todo el contenido de la página web, y getElementById es un método que permite acceder a un elemento del html a través de su id, en este caso, el id es "toggle-theme-btn", que es el botón que permite cambiar el tema de la página web.
 const ROOT = document.documentElement;
+TOGGLE_BTN.addEventListener("click", function(){
+    ROOT.classList.toggle("dark-theme");
 
+    
+});
 
 
 

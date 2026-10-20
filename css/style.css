@@ -1,36 +1,33 @@
 :root {
-    --dark-blue:#2e2e5c;
-    --beige: #F2D7B6;
-    --color-bg: var(--beige);
-    --color-text: var(--dark-blue);
+    --color-bg: #2e2e5c;
+    --color-text: #F2D7B6;
     --color-accent: #D98166;
-    --color-accent2: #546798; 
+    --color-accent-dark: #546798; 
     --font-title: 'cattivo', sans-serif;
     --font-body: 'lipa-agate-high', sans-serif;
 }
+html.dark-theme body{
+    color-scheme: dark;
+    --color-bg: #2e2e5c;
+    --color-text: #F2D7B6;
+    --color-accent:#D98166;
+}
+
+*{
+    box-sizing: border-box;
+}
 
 body {
-    background-color: var(--color-bg);
-    color: var(--color-text);
-    accent-color: var(--color-accent2);
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    accent-color: var(--color-accent-dark);
     font-family: var(--font-body);
     font-size: 1.5rem;
     text-align: center;
     transition: all .5s ease-in-out;
 
+
 }
-
-.dark-theme {
-    background-color: var(--color-text);
-    color: var(--color-bg);
-    accent-color: var(--color-accent);
-
-    /*--color-bg: var(--dark-blue);
-    --color-text: var(--beige);
-    color-accent: var(--color-accent);
-    */
-}
-
 /*@media (prefers-color-scheme: dark) {
     :root {
         --color-bg: var(--dark-blue);
