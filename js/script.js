@@ -2,7 +2,7 @@ console.log("Hello, world!");
 function saludo(nombre){
     alert("Hola, " + nombre);
 }
-saludo("Andy"); //llama a la función saludo, que es la que contiene el alert, que es un mensaje emergente en la pantalla.
+saludo(); //llama a la función saludo, que es la que contiene el alert, que es un mensaje emergente en la pantalla.
 
 let toggleThemeButton = document.getElementById("toggle-theme-btn"); 
 //para declarar variables se usa el camel case (camelCaseMethod)
