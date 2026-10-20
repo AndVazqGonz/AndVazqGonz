@@ -1,16 +1,16 @@
 :root {
-    --color-bg: #2e2e5c;
-    --color-text: #F2D7B6;
+    --color-bg: #F2D7B6;
+    --color-text: #2e2e5c;
     --color-accent: #D98166;
     --color-accent-dark: #546798; 
     --font-title: 'cattivo', sans-serif;
-    --font-body: 'lipa-agate-high', sans-serif;
+    --font-body: 'lipa-agate-high', sans-serif; /*light theme*/
 }
-html.dark-theme body{
+html.dark-theme{
     color-scheme: dark;
     --color-bg: #2e2e5c;
     --color-text: #F2D7B6;
-    --color-accent:#D98166;
+    --color-accent:#D98166; /* cuidado al declarar las variables, si la misma variable es la misma que la genera, el valor se repite indefinidamente y no existen cambios*/
 }
 
 *{
