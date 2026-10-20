@@ -4,7 +4,7 @@
     --color-bg: var(--beige);
     --color-text: var(--dark-blue);
     --color-accent: #D98166;
-    --color-accent2: #5A6275; 
+    --color-accent2: #5E79BD; 
     --font-title: 'cattivo', sans-serif;
     --font-body: 'lipa-agate-high', sans-serif;
 }
@@ -23,7 +23,7 @@ body {
 .dark-theme {
     background-color: var(--color-text);
     color: var(--color-bg);
-    accent-color: var(--color-accent);
+    accent-color: var(--color-accent2);
 
     /*--color-bg: var(--dark-blue);
     --color-text: var(--beige);
