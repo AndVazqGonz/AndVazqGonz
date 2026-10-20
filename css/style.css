@@ -23,7 +23,7 @@ body {
 .dark-theme {
     background-color: var(--color-text);
     color: var(--color-bg);
-    accent-color: var(--color-accent2);
+    accent-color: var(--color-accent);
 
     /*--color-bg: var(--dark-blue);
     --color-text: var(--beige);
