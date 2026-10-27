@@ -17,7 +17,6 @@ html.dark-theme{
 button:focus-visible {
   outline: 3px solid #005fcc;
   outline-offset: 2px;
-    
     }
 
 *{
@@ -86,24 +85,6 @@ img{
     padding: 20px;
 }
 
-fa-brands, .fa-envelope, .theme-icon, .fa-github, .fa-pinterest, .fa-instragram, .fa-tiktok {
-    font-size: 1.5em;
-    color: var(--color-accent-dark);
-}
-
-fa-brands:hover, .fa-envelope:hover, .theme-icon:hover, .logo:hover, .fa-github:hover, .fa-pinterest:hover, .fa-instragram:hover, .fa-tiktok:hover {
-    color: var(--color-accent);
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-    transform: scale(1.2);
-}
-fa-brands, .profile-image{
-    font-size: 0.5em;
-    color: var(--color-accent-dark);
-    padding: 0.5em;
-    color: var(--color-accent-dark);
-}
-
 contact-menu{
     display: flex;
   justify-content: space-between;
@@ -111,7 +92,7 @@ contact-menu{
   gap: 1rem;
 }
 
-.profile-image {
+.profile-picture {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -137,6 +118,40 @@ img{
     transition: none;
   }}
 
+  @media (light-mode) {
+  .theme-icon {
+    content: url('./img/iconos-pagina-web-dark-mode.svg');
+  }}
+
+  @media(dark-mode){
+    .theme-icon{
+        content: url('-img/iconos-pagina-web-light-mode.svg')
+    }
+  }
+
+  fa-brands, .fa-envelope, .theme-icon, .fa-github, .fa-pinterest, .fa-instragram, .fa-tiktok, .logo-pic{
+    font-size: 1.5em;
+    color: var(--color-accent-dark);
+   transition: all 0.3s ease-in-out;
+}
+
+fa-brands:hover, .fa-envelope:hover, .theme-icon:hover, .fa-github:hover, .fa-pinterest:hover, .fa-instragram:hover, .fa-tiktok:hover, .logo-main:hover, .logo-pic:hover{
+    color: var(--color-accent);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    transform: scale(1.2);
+    text-align: center;
+}
+
+.logo-pic {
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: left;
+    transition: all 0.3s ease-in-out;
+}
+
   .social-link {
     color: var(--color-accent-dark);
     text-decoration: none;
@@ -146,9 +161,11 @@ img{
     padding: 1em;
     margin: 1em 0;
     border-radius: 20px;
-    border: 5px solid var(--color-accent-dark);
+    border: 5px solid currentColor;
+    transition: all 0.3s ease-in-out;
     
   }
+  .social-link:focus-visible,
   .social-link:hover {
     color: var(--color-accent);
     transition: all 0.3s ease-in-out;
@@ -157,4 +174,15 @@ img{
     border: 5px solid var(--color-accent);
     display:inline-flex;
     text-align: center;
+  }
+  
+  .theme-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5em;
+    margin: 0.5em;
+    align-items: right;
+    max-width: fit-content;
+    max-height: fit-content;
   }
