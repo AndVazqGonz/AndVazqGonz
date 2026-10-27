@@ -3,6 +3,7 @@
     --color-text: #2e2e5c;
     --color-accent: #D98166;
     --color-accent-dark: #546798; 
+    --color--hover: #546798;
     --font-title: 'cattivo', sans-serif;
     --font-body: 'lipa-agate-high', sans-serif; /*light theme*/
 }
@@ -56,4 +57,20 @@ h1 {
     font-size: 6rem;
     line-height: 1.2;
     text-align: center;
+}
+
+p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+fa-brands, .fa-envelope, .fa-moon, .fa-sun, .fa-github, .fa-pinterest, .fa-instragram {
+    font-size: 1.5rem;
+    color: var(--color-accent-dark);
+}
+
+fa-brands:hover, .fa-envelope:hover, .fa-moon:hover, .fa-sun:hover, .fa-github:hover, .fa-pinterest:hover, .fa-instragram:hover {
+    color: var(--color-accent);
+    transition: all 0.3s ease-in-out;
 }
