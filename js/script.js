@@ -11,7 +11,6 @@ const TOGGLE_BTN = document.getElementById("toggle-theme-btn"); //document es el
 const ROOT = document.documentElement;
 TOGGLE_BTN.addEventListener("click", function(){
     ROOT.classList.toggle("dark-theme");
-
     
 });
 

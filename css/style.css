@@ -39,6 +39,11 @@ body {
     root define los valores de lo visual. Sin embargo se trabaja con variables directamente y no propiedades que definen esto.
     varialbes tiene doble guion y se definen en root. Se pueden usar en cualquier parte del documento.
 */
+@media (color-scheme: dark) {
+    :root {
+    --toggle-theme-btn: var(--color-accent); /* cuidado al declarar las variables, si la misma variable es la misma que la genera, el valor se repite indefinidamente y no existen cambios*/
+    }
+}
 
 h1,
 h2,
@@ -65,12 +70,27 @@ p{
     text-align: center;
 }
 
-fa-brands, .fa-envelope, .fa-moon, .fa-sun, .fa-github, .fa-pinterest, .fa-instragram {
-    font-size: 1.5rem;
+img{
+    max-width: 40%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+fa-brands, .fa-envelope, .logo, .theme-icon, .fa-github, .fa-pinterest, .fa-instragram {
+    font-size: 1.5em;
     color: var(--color-accent-dark);
 }
 
-fa-brands:hover, .fa-envelope:hover, .fa-moon:hover, .fa-sun:hover, .fa-github:hover, .fa-pinterest:hover, .fa-instragram:hover {
+fa-brands:hover, .fa-envelope:hover, .theme-icon:hover, .logo:hover, .fa-github:hover, .fa-pinterest:hover, .fa-instragram:hover {
     color: var(--color-accent);
     transition: all 0.3s ease-in-out;
+}
+
+img{
+    
+    max-width: 40%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
 }
