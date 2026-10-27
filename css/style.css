@@ -97,8 +97,10 @@ fa-brands:hover, .fa-envelope:hover, .theme-icon:hover, .logo:hover, .fa-github:
     cursor: pointer;
     transform: scale(1.2);
 }
-fa-brands, .logo{
+fa-brands, .profile-image{
     font-size: 0.5em;
+    color: var(--color-accent-dark);
+    padding: 0.5em;
     color: var(--color-accent-dark);
 }
 
@@ -109,7 +111,7 @@ contact-menu{
   gap: 1rem;
 }
 
-.profile {
+.profile-image {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -134,3 +136,25 @@ img{
   .control {
     transition: none;
   }}
+
+  .social-link {
+    color: var(--color-accent-dark);
+    text-decoration: none;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 20px;
+    border: 5px solid var(--color-accent-dark);
+    
+  }
+  .social-link:hover {
+    color: var(--color-accent);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    transform: scale(1.05);
+    border: 5px solid var(--color-accent);
+    display:inline-flex;
+    text-align: center;
+  }
