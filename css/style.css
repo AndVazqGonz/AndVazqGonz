@@ -62,7 +62,7 @@ h3 {
 
 header {
     background-color: var(--color-accent2);
-    font-size: 36px;
+    font-size: 1em;
     text-align: left;
 }
 
