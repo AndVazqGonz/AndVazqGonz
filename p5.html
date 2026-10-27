@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactividad | p5.js</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Evita que aparezcan barras de desplazamiento */
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/2.3.4/p5.min.js" integrity="sha512-zGE8CPs+hefOAOSuF8c8Hbt/DDoL+hsJax12U8UCPomxYkPMf4qhQmJTwSG7KzDjmemumjHFF13pUpouT4Ka1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let x = 0;
+        let y = 0;
+        let friction = .1; // Coeficiente de fricción para suavizar el movimiento del círculo 
+        //Entre mas cercano a 0, mas lento se mueve el círculo. Entre mas cercano a 1, mas rápido se mueve el círculo.
+            // Tamaños de ventana adaptable al tamaño de la pantalla del usuario. Son globales, se pueden usar en cualquier parte del código.
+            createCanvas(windowWidth, windowHeight); /* Sirve para que el canvas se adapte al tamaño de la ventana del navegador */
+            background(0);
+        
+        function setup(){
+            x = windowWidth / 2;
+            y = windowHeight / 2;
+            //tamaños de ventana adaptable al tamaño de la pantalla del usuario. Son globales, se pueden usar en cualquier parte del código.
+            resizeCanvas(windowWidth, windowHeight); /*sirve para que el canvas se adapte al tamaño de la ventana del navegador*/
+            background(0);
+
+        }
+        function draw(){
+            x += (mouseX - x) * friction; // Se mueve el círculo hacia la posición del mouse con fricción
+            y += (mouseY - y) * friction;
+            background(0,10); // Fondo negro con transparencia para crear un efecto de estela
+            fill(255);
+            noStroke();
+            ellipse(x, y, 50, 50);
+        }
+    </script>
+    
+</body>
+</html>
